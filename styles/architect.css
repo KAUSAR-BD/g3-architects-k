@@ -1,11 +1,116 @@
 /* work sans font from google fonts */
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap')
-</style>
+<style>@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap') </style>.work-sans-<uniquifier> {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
 
-.work-sans-<uniquifier> {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+/* Shared Styles */
+
+.btn-primary {
+    border-radius: 8px;
+    color: #FFF;
+    background: #FF900E;
+    padding: 20px 25px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* Header style */
+
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    font-size: 2.8rem;
+    color: #131313;
+    font-weight: 700;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 40px;
+    font-weight: 500;
+    font-size: 1.15rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424242;
+}
+
+/* banner Style */
+
+.banner-content {
+    max-width: 850px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+.text-color-gray {
+    color: #727272;
+}
+
+.banner img {
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Styles */
+/* for mobile device */
+@media screen and (max-width: 576px) {
+    header {
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+
+/* for medium device */
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+
+    header{
+        padding: 20px;
+    }
+    nav {
+       flex-direction: column;
+    }
+
 }
